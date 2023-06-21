@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator.in</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon"
+        href="https://play-lh.googleusercontent.com/vzOs3KWfj5tZLbJBk-wWDb57VGr_pNo9110Jd3QJ5sbN78l7RFXLpg41imR2OffyNA0O=w240-h480-rw"
+        type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form name="myform">
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value='', sound.play()" class="operator">
+                    <input type="button" value="DE"
+                        onclick="display.value=display.value.toString().slice(0,-1), sound.play()" class="operator">
+                    <input type="button" value="." onclick="display.value+='.', sound.play()" class="operator">
+                    <input type="button" value="/" onclick="display.value+='/', sound.play()" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value+='7', sound.play()">
+                    <input type="button" value="8" onclick="display.value+='8', sound.play()">
+                    <input type="button" value="9" onclick="display.value+='9', sound.play()">
+                    <input type="button" value="*" onclick="display.value+='*', sound.play()" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value+='4', sound.play()">
+                    <input type="button" value="5" onclick="display.value+='5', sound.play()">
+                    <input type="button" value="6" onclick="display.value+='6', sound.play()">
+                    <input type="button" value="-" onclick="display.value+='-', sound.play()" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value+='1', sound.play()">
+                    <input type="button" value="2" onclick="display.value+='2', sound.play()">
+                    <input type="button" value="3" onclick="display.value+='3', sound.play()">
+                    <input type="button" value="+" onclick="display.value+='+', sound.play()" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value+='00', sound.play()">
+                    <input type="button" value="0" onclick="display.value+='0', sound.play()">
+                    <input type="button" value="=" class="equal operator">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
